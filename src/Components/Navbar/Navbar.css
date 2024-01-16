@@ -1,0 +1,277 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.head {
+    width: 300px;
+    height: 50px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: initial;
+    gap: 10px;
+    padding-left: 80px;
+
+}
+
+.katalog {
+    width: 120px;
+    height: 34px;
+    background-color: #008DFF;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.font {
+    font-size: 24px;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    background: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    border: none;
+}
+
+.in {
+    width: 100%;
+    height: 96%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 2px solid #008DFF;
+    /* outline: 1px solid #008DFF; */
+    outline: none;
+    padding: 0 0 0 10px;
+    color: #008DFF;
+
+}
+
+.search {
+    font-size: 20px;
+    width: 70px;
+    height: 103%;
+    background: #008DFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.router {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px !important;
+    /* padding-right: 80px; */
+}
+
+.borakan {
+    width: 20px !important;
+    height: auto !important;
+    background: local;
+    color: #fff;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.link {
+    font-size: 20px;
+    color: black;
+}
+
+.br {
+    padding-right: 80px;
+
+}
+
+.Navbar_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 86px;
+    background-color: #fff;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+
+}
+
+legend {
+    width: 10000px;
+    height: 1px;
+    color: #d74c4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.katalog:hover {
+    background-color: #006aff;
+}
+
+/* Button.css */
+
+.katalogs {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.katalogs:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.katalogs:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#0cf, 15%);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.katalogs:hover {
+    color: #fff;
+}
+
+.katalogs:hover:before {
+    width: 100%;
+}
+
+
+
+.yuz {
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.cursor {
+    color: #0a0a0a;
+}
+
+.cursor:hover {
+    color: #008DFF;
+}
+
+a.active {
+    color: #008DFF;
+}
+
+a button.active {
+    color: #008DFF;
+}
+
+a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 1285px) {
+    .head {
+        padding: 0 0 0 20px;
+    }
+
+    .br {
+        padding: 0 20px 0 0;
+
+    }
+
+    .router {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .router {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: 44px;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 5px 20px; */
+        box-shadow: 0 -5px 5px #0001;
+        z-index: 10;
+    }
+
+    .borakan {
+        display: none;
+    }
+
+    .cursor {
+        color: #0a0a0a;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cursor {
+        color: #0a0a0a;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+ 
+
+}
