@@ -5,16 +5,16 @@ import Login from './Router/Login/Login';
 import Wishes from './Router/Wishes/Wishes';
 import Cart from './Router/Cart/Cart';
 import SupHeadder from './Components/Sup-header/SupHeadder';
-// import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import { PRODUCTS } from './Static';
 import Tolov from './Router/Tolov/Tolov';
-// import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 import SingilRoute from './Router/SingilRoute/SingilRoute';
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar data={PRODUCTS} /> */}
+      <Navbar data={PRODUCTS} />
       <SupHeadder />
       <Routes>
         <Route path='/' element={<Home data={PRODUCTS} />} />
@@ -28,7 +28,7 @@ function App() {
 
 
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
